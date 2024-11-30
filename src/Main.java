@@ -30,7 +30,7 @@ public class Main {
             }
         }
 
-        // Generate tickets based on user input
+        // Generate tickets based on argument
         int[][] tickets = generateTickets(numTickets, name);
 
         // Check tickets against the winning numbers
@@ -84,7 +84,7 @@ public class Main {
 
     // Check if a ticket matches the winning numbers
     public static boolean isWinner(int[] ticket, int[] winningNumbers) {
-        // Sort both arrays and compare
+        // Sort both arrays in ascending Order by default by using sort method
         int[] ticketCopy = ticket.clone();
         int[] winningNumbersCopy = winningNumbers.clone();
         Arrays.sort(ticketCopy);
